@@ -42,6 +42,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 // Импортируем нужные действия
 import { decrement, increment, incrementByAmount } from '../slices/counterSlice.js';
+import TodoApp from './TodoApp';
 
 function App() {
   // Вытаскиваем данные из хранилища
@@ -69,6 +70,12 @@ function App() {
         <br />
         <button onClick={() => dispatch(incrementByAmount(42))}>Прибавить 42</button>
       </div>
+
+
+      <div className="App">
+        <TodoApp />
+      </div>
+
     </div>
   );
 };

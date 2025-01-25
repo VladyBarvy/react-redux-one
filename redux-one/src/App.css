@@ -40,3 +40,38 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* src/App.css */
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
