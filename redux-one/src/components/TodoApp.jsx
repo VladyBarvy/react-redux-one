@@ -11,7 +11,7 @@ const TodoApp = () => {
   // const entities = useSelector((state) => state.todos.entities);  // Получаем сами задачи
   const todos = useSelector(selectAllTodos); // Получаем все задачи через селектор
 
-
+  
   const dispatch = useDispatch();
 
   const handleAddTodo = () => {

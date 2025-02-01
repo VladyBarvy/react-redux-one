@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 //import counterReducer from './counterSlice.js';
 import { goobs } from './counterSlice.js';
 import todosReducer from './todosSlice';
+import userReducer from './userSlice';
 
 const logger = (store) => (next) => (action) => {
   console.group(action.type);
@@ -20,6 +21,7 @@ export default configureStore({
     // Свойство counter будет внутри объекта общего состояния: state.counter
     counter: goobs,// counter: counterReducer,
     todos: todosReducer,
+    user: userReducer,  // Добавляем редьюсер пользователя
   },
   middleware: (getDefaultMiddleware) =>
     // getDefaultMiddleware().concat([logger, api]),

@@ -43,6 +43,7 @@ import { useSelector, useDispatch } from 'react-redux';
 // Импортируем нужные действия
 import { decrement, increment, incrementByAmount } from '../slices/counterSlice.js';
 import TodoApp from './TodoApp';
+import UserComponent from './UserComponent.jsx';
 
 function App() {
   // Вытаскиваем данные из хранилища
@@ -74,6 +75,11 @@ function App() {
 
       <div className="App">
         <TodoApp />
+      </div>
+
+
+      <div>
+        <UserComponent userId={1} />  {/* Указываем id пользователя для запроса */}
       </div>
 
     </div>
